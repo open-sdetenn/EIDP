@@ -47,7 +47,9 @@ for epoch in range(num_epochs):
         running_train_loss += loss.item() * images.size(0)
         wandb.log({"Train Loss": loss.item()})
 
-
+    """
+    pls fix, inefficient i think, or not. not sure, probably could be done better. for validation it does the job just fine.
+    """
     model.eval()
     running_val_loss = 0.0
     with torch.no_grad():
@@ -65,8 +67,7 @@ for epoch in range(num_epochs):
 
     epoch_val_loss = running_val_loss / len(val_dataset)
     print(f'Validation - Epoch [{epoch + 1}/{num_epochs}], Loss: {epoch_val_loss:.4f}')
-    
-    # Log validation loss to wandb
+
     wandb.log({"Validation Loss": epoch_val_loss})
 
     torch.save(model.state_dict(), f'models/model_loss{epoch_val_loss}_e{epoch+1}.pth')

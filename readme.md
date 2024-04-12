@@ -3,9 +3,11 @@ EIDP is the codebase accompanying the micro-paper titled 'Enhanced Inverse Dynam
 
 Paper: [EIDP](https://wandb.ai/mikusdevr/IDM/reports/Enhanced-Inverse-Dynamics-Prediction-for-Robot-Control-Using-Deep-Residual-Networks--Vmlldzo3NDczNDc1)
 
-## Latest Model
-The most recent model can be found on the Hugging Face model hub:
-[ResNet18 Linear v1](https://huggingface.co/opensdetenn/resnet18_linear_v1)
+## Models
+### ResNet-18-V1
+  [ResNet18-V1 epochs 0-64](https://huggingface.co/opensdetenn/resnet18_linear_v1)
+  
+  [ResNet18-V1 with the lowest validation loss](https://huggingface.co/opensdetenn/resnet18_linear_v1-optimal/resolve/main/pytorch_model.pth)
 
 ## Colab
 A Colab notebook will be available soon. For now, please use the current code provided. Download the weights you need and run inference.

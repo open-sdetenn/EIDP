@@ -3,3 +3,4 @@ torchvision
 gradio
 pillow
 tqdm
+opencv-python

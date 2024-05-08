@@ -4,3 +4,4 @@ gradio
 pillow
 tqdm
 opencv-python
+streamlit
